@@ -2,25 +2,21 @@ import { Resend } from 'resend';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-export default async function handler(req: Request): Promise<Response> {
+export default async function handler(req: {
+  method: string;
+  json: () => Promise<{ email: string }>;
+}): Promise<{ status: number; body: string }> {
   if (req.method !== 'POST') {
-    return new Response(JSON.stringify({ error: 'Method not allowed' }), {
-      status: 405,
-      headers: { 'Content-Type': 'application/json' },
-    });
+    return { status: 405, body: JSON.stringify({ error: 'Method not allowed' }) };
   }
 
   try {
     const { email } = await req.json();
 
     if (!email || !email.includes('@')) {
-      return new Response(JSON.stringify({ error: 'Invalid email' }), {
-        status: 400,
-        headers: { 'Content-Type': 'application/json' },
-      });
+      return { status: 400, body: JSON.stringify({ error: 'Invalid email' }) };
     }
 
-    // Send welcome email to subscriber
     await resend.emails.send({
       from: 'PIUSFX <support@piusfx.com>',
       to: [email],
@@ -49,7 +45,6 @@ export default async function handler(req: Request): Promise<Response> {
       `,
     });
 
-    // Notify you at your email
     await resend.emails.send({
       from: 'PIUSFX <support@piusfx.com>',
       to: ['support@piusfx.com'],
@@ -57,16 +52,10 @@ export default async function handler(req: Request): Promise<Response> {
       html: `<p>New subscriber just signed up: <strong>${email}</strong></p>`,
     });
 
-    return new Response(JSON.stringify({ success: true }), {
-      status: 200,
-      headers: { 'Content-Type': 'application/json' },
-    });
+    return { status: 200, body: JSON.stringify({ success: true }) };
 
   } catch (error) {
     console.error('Resend error:', error);
-    return new Response(JSON.stringify({ error: 'Failed to send email' }), {
-      status: 500,
-      headers: { 'Content-Type': 'application/json' },
-    });
+    return { status: 500, body: JSON.stringify({ error: 'Failed to send email' }) };
   }
 }
