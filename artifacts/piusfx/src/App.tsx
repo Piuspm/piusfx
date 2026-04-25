@@ -16,6 +16,7 @@ import Home from "@/pages/Home";
 import About from "@/pages/About";
 import Services from "@/pages/Services";
 import Pricing from "@/pages/Pricing";
+import Resources from "@/pages/Resources";
 import Contact from "@/pages/Contact";
 import Terms from "@/pages/legal/Terms";
 import Privacy from "@/pages/legal/Privacy";
@@ -57,6 +58,7 @@ function Router() {
         <Route path="/about" component={About} />
         <Route path="/services" component={Services} />
         <Route path="/pricing" component={Pricing} />
+        <Route path="/resources" component={Resources} />
         <Route path="/contact" component={Contact} />
         <Route path="/legal/terms" component={Terms} />
         <Route path="/legal/privacy" component={Privacy} />
