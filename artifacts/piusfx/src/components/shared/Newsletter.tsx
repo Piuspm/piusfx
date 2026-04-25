@@ -26,11 +26,6 @@ export default function Newsletter() {
         title: "Check your inbox!",
         description: `We just sent you a welcome email to ${email}`,
       });
-      
-      setTimeout(() => {
-        window.open("https://t.me/therealpiusfx", "_blank");
-      }, 1500);
-      
       setEmail("");
     } catch (err: any) {
       toast({
