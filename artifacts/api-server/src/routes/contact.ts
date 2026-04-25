@@ -3,7 +3,7 @@ import nodemailer from "nodemailer";
 
 const router: IRouter = Router();
 
-const GMAIL_USER = "piusfxke@gmail.com";
+const GMAIL_USER = "support@piusfx.com";
 
 function getTransporter() {
   const pass = process.env["GMAIL_APP_PASSWORD"];
