@@ -8,7 +8,7 @@ import { SiX, SiInstagram, SiYoutube, SiTelegram, SiWhatsapp, SiTiktok, SiFacebo
 import { Mail, MapPin, Send } from "lucide-react";
 
 const WHATSAPP_URL = "https://wa.link/zn66ij";
-const SUPPORT_EMAIL = "support@piusfx.com";
+const SUPPORT_EMAIL = "piusfxke@gmail.com";
 
 export default function Contact() {
   const { toast } = useToast();
