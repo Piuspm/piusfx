@@ -275,6 +275,25 @@ export default function Home() {
               </motion.div>
             ))}
           </div>
+
+          <div className="mt-16 text-center max-w-2xl mx-auto">
+            <h3 className="text-2xl md:text-3xl font-bold mb-4">
+              See These Results in Real Time
+            </h3>
+            <p className="text-muted-foreground mb-6">
+               Join our Telegram channel for live trade ideas, market insights, and real trader results—no delays.
+            </p>
+
+            <a
+               href="https://t.me/therealpiusfx"
+               target="_blank"
+               rel="noopener noreferrer"
+               className="inline-block bg-primary text-primary-foreground px-10 py-4 rounded-lg font-semibold text-lg hover:bg-primary/90 transition-colors"
+             >
+              👉 Join Telegram Now
+            </a>
+          </div>
+          
         </div>
       </section>
 
