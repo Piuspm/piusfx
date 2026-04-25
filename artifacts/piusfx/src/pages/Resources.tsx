@@ -23,7 +23,7 @@ const resources = [
   {
     title: "The 1-Page Trading Plan Template",
     link: "/resources/Inside-A-Traders-Mind.pdf"
-  }
+  },
   {
     title: "Weekly Market Breakdown",
     description: "Get high-probability setups and analysis shared weekly.",
@@ -60,16 +60,23 @@ export default function Resources() {
                 <CardContent className="p-8 flex flex-col h-full">
                   <h3 className="text-xl font-bold mb-4">{res.title}</h3>
                   <p className="text-muted-foreground mb-6 flex-grow">
-                    {res.description}
+                    {res.description || ""}
                   </p>
 
                   <a
                     href={res.link}
+                    download={res.link.endsWith(".pdf")}
+                    target={res.link.endsWith(".pdf") ? "_self" : "_blank"}
+                    rel="noopener noreferrer"
+                  >
+                     <Button className="w-full">
+
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <Button className="w-full">
-                      Access Resource <ArrowRight className="ml-2 h-4 w-4" />
+                      {res.link.endsWith(".pdf") ? "Download" : "Access Resource"}
+                      <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>
                   </a>
                 </CardContent>
