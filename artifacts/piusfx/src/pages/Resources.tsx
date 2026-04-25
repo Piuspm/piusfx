@@ -5,15 +5,25 @@ import { ArrowRight } from "lucide-react";
 
 const resources = [
   {
-    title: "Forex Beginner Guide",
-    description: "Learn the fundamentals of forex trading, market structure, and key concepts.",
-    link: "https://t.me/therealpiusfx"
+    title: "Forex Foundations: A Beginner’s Roadmap",
+    link: "/resources/My-Forex-Bible.pdf"
   },
   {
-    title: "Risk Management Blueprint",
-    description: "Master position sizing, drawdown control, and consistent profitability.",
-    link: "https://t.me/therealpiusfx"
+    title: "The PIUSFX Risk Management Blueprint",
+    link: "/resources/risk-management.pdf"
   },
+  {
+    title: "Price Action & Market Structure 101",
+    link: "/resources/Elliot-Wave-Theory.pdf"
+  },
+  {
+    title: "Trading Psychology Field Manual",
+    link: "/resources/TRADING-IN-THE-ZONE-MARK-DOUGLAS.pdf"
+  },
+  {
+    title: "The 1-Page Trading Plan Template",
+    link: "/resources/Inside-A-Traders-Mind.pdf"
+  }
   {
     title: "Weekly Market Breakdown",
     description: "Get high-probability setups and analysis shared weekly.",
