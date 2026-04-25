@@ -46,7 +46,7 @@ export default function Footer() {
               <li><Link href="/services" className="hover:text-primary transition-colors">Premium Signals</Link></li>
               <li><Link href="/services" className="hover:text-primary transition-colors">Trading Course</Link></li>
               <li><Link href="/services" className="hover:text-primary transition-colors">1-on-1 Mentorship</Link></li>
-              <li><Link href="/services" className="hover:text-primary transition-colors">Free Resources</Link></li>
+              <li><Link href="/resources" className="hover:text-primary transition-colors">Free Resources</Link></li>
             </ul>
           </div>
           <div>
@@ -55,7 +55,17 @@ export default function Footer() {
               <li><Link href="/about" className="hover:text-primary transition-colors">About Pius</Link></li>
               <li><Link href="/contact" className="hover:text-primary transition-colors">Contact Us</Link></li>
               <li><Link href="/pricing" className="hover:text-primary transition-colors">Pricing</Link></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Testimonials</a></li>
+              <li>
+                <a 
+                  href="https://t.me/therealpiusfx"
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-primary transition-colors"
+                >
+                  Testimonials
+                </a>
+              </li>
+                
             </ul>
           </div>
           <div>
