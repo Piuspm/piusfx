@@ -123,7 +123,7 @@ function PlanCard({ plan, delay }: { plan: Plan; delay: number }) {
         {plan.popular && (
           <div className="absolute inset-0 bg-gradient-to-b from-primary/10 to-transparent pointer-events-none" />
         )}
-        <CardContent className="p-8 relative z-10 flex flex-col h-full">
+        <CardContent className="p-6 md:p-8 relative z-10 flex flex-col h-full">
           <h3 className="text-2xl font-bold mb-2 text-white">{plan.name}</h3>
           <p className="text-sm text-muted-foreground mb-6 min-h-[40px]">
             {plan.desc}
@@ -166,7 +166,7 @@ function PlanCard({ plan, delay }: { plan: Plan; delay: number }) {
 
 export default function Pricing() {
   return (
-    <div className="w-full pt-32 pb-24 min-h-screen relative">
+      <div className="w-full pt-32 pb-24 min-h-screen relative overflow-hidden">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-primary/10 rounded-full blur-[120px] pointer-events-none" />
       
       <div className="container mx-auto px-4 md:px-6 relative z-10">
