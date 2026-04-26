@@ -4,7 +4,7 @@ export default function Terms() {
   return (
     <LegalPage
       title="Terms of Service"
-      effectiveDate="January 1, 2026"
+      effectiveDate="April 24, 2026"
       intro={
         <>
           <p>
