@@ -430,3 +430,61 @@ html:not(.dark) footer {
   color: hsl(var(--foreground)) !important;
   border-top: 1px solid hsl(var(--border));
 }
+
+
+/* ============================================================
+   LIGHT MODE POLISH — premium touches for the spots that
+   the broad overrides above can't catch elegantly.
+   ============================================================ */
+
+/* 1) Glass-morphism pricing cards (bg-card/60 + backdrop-blur-sm)
+      vanish into the white background in light mode.
+      Make them solid card-colored with a subtle elevation. */
+html:not(.dark) .bg-card\/60,
+html:not(.dark) .bg-card\/50,
+html:not(.dark) .bg-card\/40 {
+  background-color: hsl(var(--card)) !important;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04) !important;
+}
+
+/* 2) Gold "glow" shadows on Join Signals + popular pricing card vanish
+      against white. Replace with a richer amber drop shadow + thin gold ring. */
+html:not(.dark) .shadow-\[0_0_15px_rgba\(255\,215\,0\,0\.3\)\],
+html:not(.dark) .shadow-\[0_0_20px_rgba\(255\,215\,0\,0\.3\)\],
+html:not(.dark) .shadow-\[0_0_30px_rgba\(255\,215\,0\,0\.15\)\] {
+  box-shadow: 0 4px 14px rgba(212,175,55,0.35), 0 0 0 1px rgba(212,175,55,0.25) !important;
+}
+html:not(.dark) .hover\:shadow-\[0_0_25px_rgba\(255\,215\,0\,0\.5\)\]:hover,
+html:not(.dark) .hover\:shadow-\[0_0_30px_rgba\(255\,215\,0\,0\.5\)\]:hover {
+  box-shadow: 0 6px 22px rgba(212,175,55,0.50), 0 0 0 1px rgba(212,175,55,0.35) !important;
+}
+
+/* 3) Hero background image is dark forex charts at 20% opacity = grey smudge
+      against white. Lower opacity + multiply blend so it tints into the page. */
+html:not(.dark) section img.opacity-20 {
+  opacity: 0.10 !important;
+  mix-blend-mode: multiply;
+}
+
+/* 4) Decorative hero glows (gold + blue blurred orbs) are too pale
+      against white. Boost their tint slightly. */
+html:not(.dark) .blur-\[120px\].bg-primary\/10 {
+  background-color: hsl(45 93% 47% / 0.18) !important;
+}
+html:not(.dark) .blur-\[120px\].bg-secondary\/10 {
+  background-color: hsl(217 91% 50% / 0.10) !important;
+}
+
+/* 5) About-page portrait of Pius defaults to grayscale (looks intentional in dark
+      mode, washed-out in light). Show in full color in light mode, soft desat on hover. */
+html:not(.dark) img.grayscale {
+  filter: grayscale(0) !important;
+}
+html:not(.dark) img.grayscale:hover {
+  filter: grayscale(0.25) !important;
+}
+
+/* 6) Pricing "Popular" card needs a solid border in light mode so the gold pops. */
+html:not(.dark) .border-primary {
+  border-color: hsl(var(--primary)) !important;
+}
