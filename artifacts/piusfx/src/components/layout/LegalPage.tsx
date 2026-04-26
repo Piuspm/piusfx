@@ -39,8 +39,8 @@ export default function LegalPage({ title, effectiveDate, intro, sections }: Leg
 
             <div className="pt-6 border-t border-white/5 text-sm text-muted-foreground">
               Questions about this document? Contact us at{" "}
-              <a href="mailto:piusfxke@gmail.com" className="text-primary hover:underline">
-                piusfxke@gmail.com
+              <a href="mailto:support@piusfx.com" className="text-primary hover:underline">
+                support@piusfx.com
               </a>
               .
             </div>
