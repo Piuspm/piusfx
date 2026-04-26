@@ -16,7 +16,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     }
 
     const response = await resend.emails.send({
-      from: 'PIUSFX <support@piusfx.com>',
+      from: 'PIUSFX <noreply@piusfx.com>',
       to: ['support@piusfx.com'],
       subject: `New Contact Message from ${firstName} ${lastName}`,
       reply_to: email,
