@@ -259,8 +259,8 @@ export default function Terms() {
           body: (
             <p>
               For questions about these Terms, contact{" "}
-              <a href="mailto:piusfxke@gmail.com" className="text-primary hover:underline">
-                piusfxke@gmail.com
+              <a href="mailto:support@piusfx.com" className="text-primary hover:underline">
+                support@piusfx.com
               </a>
               .
             </p>
