@@ -67,7 +67,6 @@ export default function Navbar() {
             >
               Member Login
             </span>
-          </Link>
           <Link href="/pricing">
             <Button className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-[0_0_15px_rgba(255,215,0,0.3)] hover:shadow-[0_0_25px_rgba(255,215,0,0.5)] transition-all">
               Join Signals
