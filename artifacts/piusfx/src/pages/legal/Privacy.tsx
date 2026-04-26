@@ -170,8 +170,8 @@ export default function Privacy() {
               </ul>
               <p>
                 To exercise any of these rights, email{" "}
-                <a href="mailto:piusfxke@gmail.com" className="text-primary hover:underline">
-                  piusfxke@gmail.com
+                <a href="mailto:support@piusfx.com" className="text-primary hover:underline">
+                  support@piusfx.com
                 </a>
                 . We may need to verify your identity before acting on a request.
               </p>
@@ -193,7 +193,7 @@ export default function Privacy() {
           body: (
             <p>
               You can opt out of marketing emails at any time using the unsubscribe link in
-              the email or by contacting piusfxke@gmail.com. We will continue to send
+              the email or by contacting support@piusfx.com. We will continue to send
               transactional messages (such as receipts, account notices, and security alerts)
               that are necessary to provide the Services.
             </p>
@@ -214,8 +214,8 @@ export default function Privacy() {
           body: (
             <p>
               For privacy-related questions or requests, contact{" "}
-              <a href="mailto:piusfxke@gmail.com" className="text-primary hover:underline">
-                piusfxke@gmail.com
+              <a href="mailto:support@piusfx.com" className="text-primary hover:underline">
+                support@piusfx.com
               </a>
               .
             </p>
