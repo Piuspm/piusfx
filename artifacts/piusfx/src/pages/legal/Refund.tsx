@@ -126,8 +126,8 @@ export default function Refund() {
               <p>
                 If you believe you qualify for a refund under one of the limited exceptions
                 above, send an email to{" "}
-                <a href="mailto:piusfxke@gmail.com" className="text-primary hover:underline">
-                  piusfxke@gmail.com
+                <a href="mailto:support@piusfx.com" className="text-primary hover:underline">
+                  support@piusfx.com
                 </a>{" "}
                 including:
               </p>
@@ -162,8 +162,8 @@ export default function Refund() {
           body: (
             <p>
               For all refund requests or questions about this policy, contact{" "}
-              <a href="mailto:piusfxke@gmail.com" className="text-primary hover:underline">
-                piusfxke@gmail.com
+              <a href="mailto:support@piusfx.com" className="text-primary hover:underline">
+                support@piusfx.com
               </a>
               .
             </p>
