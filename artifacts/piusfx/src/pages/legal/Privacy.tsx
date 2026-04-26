@@ -4,7 +4,7 @@ export default function Privacy() {
   return (
     <LegalPage
       title="Privacy Policy"
-      effectiveDate="January 1, 2026"
+      effectiveDate="April 24, 2026"
       intro={
         <p>
           PIUSFX LIMITED COMPANY ("PIUSFX", "we", "us", "our") respects your privacy and is
