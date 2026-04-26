@@ -19,7 +19,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       from: 'PIUSFX <noreply@piusfx.com>',
       to: ['support@piusfx.com'],
       subject: `New Contact Message from ${firstName} ${lastName}`,
-      reply_to: email,
+      replyTo: email,
       html: `
         <p><strong>Name:</strong> ${firstName} ${lastName}</p>
         <p><strong>Email:</strong> ${email}</p>
