@@ -57,7 +57,17 @@ export default function Navbar() {
 
         <div className="hidden md:flex items-center gap-4">
           <Link href="/services">
-            <Button variant="ghost" className="hover:text-primary hover:bg-primary/10">Member Login</Button>
+            <span
+              role="button"
+              aria-disabled="true"
+              tabIndex={-1}
+              onContextMenu={(e) => e.preventDefault()}
+              onMouseDown={(e) => e.preventDefault()}
+              title="Member area coming soon"
+              className="inline-flex items-center justify-center px-4 py-2 text-sm font-medium rounded-md text-muted-foreground/60 select-none cursor-not-allowed pointer-events-auto"
+            >
+              Member Login
+            </span>
           </Link>
           <Link href="/pricing">
             <Button className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-[0_0_15px_rgba(255,215,0,0.3)] hover:shadow-[0_0_25px_rgba(255,215,0,0.5)] transition-all">
@@ -94,7 +104,17 @@ export default function Navbar() {
               ))}
             </nav>
             <div className="mt-auto flex flex-col gap-4">
-              <Button variant="outline" className="w-full border-white/10" onClick={() => setMobileMenuOpen(false)}>Member Login</Button>
+                            <span
+                role="button"
+                aria-disabled="true"
+                tabIndex={-1}
+                onContextMenu={(e) => e.preventDefault()}
+                onMouseDown={(e) => e.preventDefault()}
+                title="Member area coming soon"
+                className="w-full inline-flex items-center justify-center px-4 py-2 text-sm font-medium rounded-md border border-white/10 text-muted-foreground/60 select-none cursor-not-allowed"
+              >
+                Member Login
+              </span>
               <Button className="w-full bg-primary text-primary-foreground" onClick={() => setMobileMenuOpen(false)}>Join Signals</Button>
             </div>
           </SheetContent>
