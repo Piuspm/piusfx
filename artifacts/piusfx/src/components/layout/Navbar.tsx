@@ -4,6 +4,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import ThemeToggle from "@/components/shared/ThemeToggle";
 
 const navLinks = [
   { name: "Home", href: "/" },
@@ -72,15 +73,19 @@ export default function Navbar() {
               Join Signals
             </Button>
           </Link>
+          <ThemeToggle />
         </div>
 
         {/* Mobile Nav */}
-        <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
-          <SheetTrigger asChild className="md:hidden">
-            <Button variant="ghost" size="icon" className="text-foreground">
-              <Menu className="h-6 w-6" />
-            </Button>
-          </SheetTrigger>
+        <div className="md:hidden flex items-center gap-2">
+          <ThemeToggle />
+          <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
+            <SheetTrigger asChild>
+              <Button variant="ghost" size="icon" className="text-foreground">
+                <Menu className="h-6 w-6" />
+              </Button>
+            </SheetTrigger>
+            
           <SheetContent side="right" className="w-[300px] bg-background/95 backdrop-blur-xl border-white/10 p-6 flex flex-col">
             <div className="flex items-center justify-between mb-8 mt-4">
               <span className="text-xl font-display font-bold tracking-tight">
@@ -115,8 +120,9 @@ export default function Navbar() {
               </span>
               <Button className="w-full bg-primary text-primary-foreground" onClick={() => setMobileMenuOpen(false)}>Join Signals</Button>
             </div>
-          </SheetContent>
-        </Sheet>
+           </SheetContent>
+          </Sheet>
+        </div>
       </div>
     </header>
   );
