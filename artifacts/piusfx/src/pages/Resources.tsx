@@ -68,17 +68,14 @@ export default function Resources() {
                     download={res.link.endsWith(".pdf")}
                     target={res.link.endsWith(".pdf") ? "_self" : "_blank"}
                     rel="noopener noreferrer"
-                  >
-                     <Button className="w-full">
-
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    className="w-full"
                   >
                     <Button className="w-full">
                       {res.link.endsWith(".pdf") ? "Download" : "Access Resource"}
                       <ArrowRight className="ml-2 h-4 w-4" />
-                    </Button>
+                     </Button>
                   </a>
+                  
                 </CardContent>
               </Card>
             </motion.div>
