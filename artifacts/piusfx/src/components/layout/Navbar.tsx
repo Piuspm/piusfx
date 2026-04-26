@@ -56,7 +56,6 @@ export default function Navbar() {
         </nav>
 
         <div className="hidden md:flex items-center gap-4">
-          <Link href="/services">
             <span
               role="button"
               aria-disabled="true"
