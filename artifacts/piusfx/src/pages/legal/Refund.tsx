@@ -4,7 +4,7 @@ export default function Refund() {
   return (
     <LegalPage
       title="Refund Policy"
-      effectiveDate="January 1, 2026"
+      effectiveDate="April 24, 2026"
       intro={
         <p>
           This Refund Policy explains when and how refunds may be issued for paid services
