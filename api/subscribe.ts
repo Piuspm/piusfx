@@ -15,7 +15,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
   try {
     await resend.emails.send({
-      from: 'PIUSFX <support@piusfx.com>',
+      from: 'PIUSFX <noreply@piusfx.com>',
       to: [email],
       subject: "You're In! Here's Your Next Step to Stay Ahead of the Markets",
       html: `<!doctype html>
@@ -42,7 +42,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     });
 
     await resend.emails.send({
-      from: 'PIUSFX <support@piusfx.com>',
+      from: 'PIUSFX <noreply@piusfx.com>',
       to: ['support@piusfx.com'],
       subject: `New Subscriber: ${email}`,
       html: `<p>New subscriber: <strong>${email}</strong></p>`,
