@@ -42,14 +42,6 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 </body></html>`,
     });
 
-    await resend.emails.send({
-      from: 'PIUSFX <support@piusfx.com>',
-      to: ['support@piusfx.com'],
-      replyTo: email,
-      subject: `New Subscriber: ${email}`,
-      html: `<p>New subscriber: <strong>${email}</strong></p>`,
-    });
-
     return res.status(200).json({ ok: true });
   } catch (err) {
     console.error('Resend error:', err);
